@@ -16,22 +16,24 @@ class MyWindow(QMainWindow):
         super(MyWindow, self).__init__()
 
         self.setWindowTitle("Приложуха")
-        self.setWindowIcon(QIcon('icons/mainIcon.ico'))
+        self.setWindowIcon(QIcon('../icons/mainIcon.ico'))
 
-        btn0 = QtWidgets.QPushButton('1')
-        btn1 = QtWidgets.QPushButton('2')
-        btn2 = QtWidgets.QPushButton('3')
-        btn3 = QtWidgets.QPushButton('4')
-        btn4 = QtWidgets.QPushButton('5')
+        title_label = QtWidgets.QLabel("Title")
+        author_label = QtWidgets.QLabel("Author")
+        review_label = QtWidgets.QLabel("Review")
+
+        title_line = QtWidgets.QLineEdit()
+        author_line = QtWidgets.QLineEdit()
+        review_line = QtWidgets.QLineEdit()
 
         grid = QGridLayout()
-        # grid.setSpacing(20)
 
-        grid.addWidget(btn0, 0, 0)
-        grid.addWidget(btn1, 1, 0)
-        grid.addWidget(btn2, 2, 0)
-        grid.addWidget(btn3, 0, 1)
-        grid.addWidget(btn4, 0, 2)
+        grid.addWidget(title_label, 0, 0)
+        grid.addWidget(author_label, 1, 0)
+        grid.addWidget(review_label, 2, 0)
+        grid.addWidget(title_line, 0, 1)
+        grid.addWidget(author_line, 1, 1)
+        grid.addWidget(review_line, 2, 1)
 
         container = QWidget()
         container.setLayout(grid)
@@ -49,4 +51,3 @@ def application():
 
 if __name__ == "__main__":
     application()
-

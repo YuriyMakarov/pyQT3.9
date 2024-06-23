@@ -12,7 +12,7 @@ class BarWindow(QMainWindow):
 
         self.move(700, 500)
         self.setWindowTitle("Приложуха")
-        self.setWindowIcon(QIcon('icons/mainIcon.ico'))
+        self.setWindowIcon(QIcon('../icons/mainIcon.ico'))
         self.create_menu_bar()
 
     def open_main_window(self, window):

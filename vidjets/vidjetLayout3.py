@@ -16,7 +16,7 @@ class MyWindow(QMainWindow):
 
         self.setGeometry(400, 400, 500, 300)
         self.setWindowTitle("Приложуха")
-        self.setWindowIcon(QIcon('icons/mainIcon.ico'))
+        self.setWindowIcon(QIcon('../icons/mainIcon.ico'))
 
         grid = QtWidgets.QGridLayout()
         self.setLayout(grid)
