@@ -28,7 +28,8 @@ class MyWindow(QMainWindow):
         # grid.setSpacing(20)
 
         grid.addWidget(btn0, 0, 0)
-        grid.addWidget(btn1, 1, 0, 1, 3)
+        #grid.addWidget(btn1, 1, 0, 1, 3)
+        grid.addWidget(btn1, 1, 1)
         grid.addWidget(btn2, 2, 0)
         grid.addWidget(btn3, 0, 1)
         grid.addWidget(btn4, 0, 2)
